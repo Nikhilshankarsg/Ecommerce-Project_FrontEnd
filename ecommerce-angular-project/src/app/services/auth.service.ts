@@ -15,7 +15,7 @@ export class AuthService {
 
 signup(data: SignUpRequest) : Observable<SignupResponse>{
   return this.http.post<SignupResponse>(
-    `${this.BASEURL}/auth/signUp`,data
+    `${this.BASEURL}/signUp`,data
   )
   }
 }
